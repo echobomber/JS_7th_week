@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #f0f4f7;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #6659f5;
+  margin: 30px 0;
+}
+
+.addPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.addPanel form {
+  width: 70%;
+}
+
+.chartPanel {
+  width: 30%;
+}
+
+.addTicket-form {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.addTicket-form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6659f5;
+  margin-bottom: 15px;
+}
+
+.addTicket-form-item label, .addTicket-form-item input, .addTicket-form-item select, .addTicket-form-item textarea {
+  margin-right: 15px;
+}
+
+.addTicket-form-item input, .addTicket-form-item select, .addTicket-form-item textarea {
+  min-height: 30px;
+  width: 35%;
+  text-indent: 0.5rem;
+  border: 2px solid #DCDCDC;
+  border-radius: 5px;
+  color: #9A9898;
+}
+
+.addTicket-form-item input::-webkit-input-placeholder, .addTicket-form-item select::-webkit-input-placeholder, .addTicket-form-item textarea::-webkit-input-placeholder {
+  color: #9A9898;
+}
+
+.addTicket-form-item input:-ms-input-placeholder, .addTicket-form-item select:-ms-input-placeholder, .addTicket-form-item textarea:-ms-input-placeholder {
+  color: #9A9898;
+}
+
+.addTicket-form-item input::-ms-input-placeholder, .addTicket-form-item select::-ms-input-placeholder, .addTicket-form-item textarea::-ms-input-placeholder {
+  color: #9A9898;
+}
+
+.addTicket-form-item input::placeholder, .addTicket-form-item select::placeholder, .addTicket-form-item textarea::placeholder {
+  color: #9A9898;
+}
+
+.addTicket-form-item p {
+  color: #ea9f69;
+}
+
+.addform-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-ticket-btn, .search-btn, .remove-ticket-btn {
+  display: block;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #f3c19d;
+  border: 2px solid #ea9f69;
+  color: #6659f5;
+}
+
+.add-ticket-btn:hover, .search-btn:hover, .remove-ticket-btn:hover {
+  opacity: 0.8;
+}
+
+.add-ticket-btn, .remove-ticket-btn {
+  margin-right: 10px;
+}
+
+.apart-line {
+  margin: 40px 0;
+  height: 1.5px;
+  background-color: #9A9898;
+}
+
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchBar-input {
+  margin-right: 10px;
+  width: 20%;
+}
+
+.searchBar-input input, .searchBar-input select {
+  border: 2px solid #DCDCDC;
+  border-radius: 5px;
+  color: #9A9898;
+}
+
+.searchBar-input input::-webkit-input-placeholder, .searchBar-input select::-webkit-input-placeholder {
+  color: #9A9898;
+}
+
+.searchBar-input input:-ms-input-placeholder, .searchBar-input select:-ms-input-placeholder {
+  color: #9A9898;
+}
+
+.searchBar-input input::-ms-input-placeholder, .searchBar-input select::-ms-input-placeholder {
+  color: #9A9898;
+}
+
+.searchBar-input input::placeholder, .searchBar-input select::placeholder {
+  color: #9A9898;
+}
+
+.region-search, .price-search, .keyword-search {
+  min-height: 35px;
+  width: 100%;
+}
+
+.searchResult-text {
+  margin: 15px 0;
+}
+
+.ticketCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tickeCard-item {
+  width: 23%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+
+.tickeCard-img {
+  border: #ffffff solid 5px;
+  position: relative;
+}
+
+.tickeCard-img img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-caption {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #b2acfa;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tickeCard-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.tickeCard-text h2, .tickeCard-text p {
+  margin-bottom: 10px;
+}
+
+.tickeCard-text h2 {
+  font-size: 1.5rem;
+  color: #6659f5;
+}
+
+.tickeCard-text p {
+  font-size: 0.9rem;
+}
+
+.tickeCard-num {
+  color: #ea9f69;
+}
+
+.tickeCard-price {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.tempImg {
+  margin-top: 10px;
+  max-width: 200px;
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,24 @@
+1. validate.js 的 CDN 如果不用 live server 打不開
+2. Imgur 會阻擋 live server 的存取
+
+兩個會有一個不能用
+
+
+我今天修改套件作業的時候碰到問題，回報一下順便想問看看其他人是不是也會這樣。
+因為我是在本機上寫的，寫完才貼到 CodePen 上，
+
+問題一
+我發現 HTML 檔案如果「不是」用 live server 開啟 (我是指直接點擊打開 index.html) 在載入 validate.js CDN 的時候就會卡住，網頁會壞掉，
+但是完全相同的程式碼如果用 live server 開啟，或是放在 CodePen 上，它就可以正常的運行。
+
+問題二
+新增的作業要求有一項是需要將上傳的圖片顯示在畫面中。我發現「如果我用 」live server 本地運行檔案，雖然可以順利的上傳檔案，但是 Imgur 會阻止我將網址渲染到畫面上，出現 403 畫面。
+但是如果把完全相同的程式碼放到 CodePen 上，或是我選擇「不要用」 live server 開啟 (把會導致卡住的 validate.js CDN 拿掉，直接點擊打開 index.html) 就又可以正常運行了。
+
+問題二我 Google 一下，發現好像 Imgur 好像真的是會阻止 127.0.0.1 (live server) 的存取
+https://stackoverflow.com/questions/43895390/imgur-images-returning-403
+
+這樣就很尷尬了，如果我想要在自己的電腦上寫，不透過 CodePen，
+validate.js CDN 跟 Imgur 的 Bug 就會打架，兩個會有一個不能用。
+
+這邊也附上我的問題檔案

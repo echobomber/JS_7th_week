@@ -1,0 +1,163 @@
+$primary-color: #6659f5;
+$primary-light-color: #b2acfa;
+$secondary-color: #ea9f69;
+$secondary-light-color: #f3c19d;
+//
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    background-color: #f0f4f7;
+}
+.wrap{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.page-title{
+    font-size: 2rem;
+    color: $primary-color;
+    margin: 30px 0;
+}
+.addPanel{
+    display: flex;
+    form{
+        width: 70%;
+    }
+}
+.chartPanel{
+    width: 30%;
+}
+.addTicket-form{
+    font-size: 1.2rem;
+    width: 100%;
+    // max-width: 800px;
+}
+.addTicket-form-item{
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    margin-bottom: 15px;
+    label, input, select, textarea{
+        margin-right: 15px;
+    }
+    input, select, textarea{
+        min-height: 30px;
+        width: 35%;
+        text-indent: 0.5rem;
+        border: 2px solid #DCDCDC;
+        border-radius: 5px;
+        color: #9A9898;
+        &::placeholder{
+            color: #9A9898;
+        }
+    }
+    p{
+        color: $secondary-color;
+    }
+}
+.addform-btn{
+    display: flex;
+}
+.add-ticket-btn, .search-btn, .remove-ticket-btn{
+    display: block;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: $secondary-light-color;
+    border: 2px solid $secondary-color;
+    color: $primary-color;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.add-ticket-btn, .remove-ticket-btn{
+    margin-right: 10px;
+}
+.apart-line{
+    margin: 40px 0;
+    height: 1.5px;
+    background-color: #9A9898;
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+}
+.searchBar-input{
+    margin-right: 10px;
+    width: 20%;
+    input, select {
+        border: 2px solid #DCDCDC;
+        border-radius: 5px;
+        color: #9A9898;
+        &::placeholder{
+            color: #9A9898;
+        }
+    }
+}
+.region-search, .price-search, .keyword-search{
+    min-height: 35px;
+    width: 100%;
+}
+.searchResult-text{
+    margin: 15px 0;
+}
+.ticketCard{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tickeCard-item{
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.tickeCard-img{
+    border: #ffffff solid 5px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+.img-caption{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $primary-light-color;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.tickeCard-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    h2, p{
+        margin-bottom: 10px;
+    }
+    h2{
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
+.tickeCard-num{
+    color: $secondary-color;
+}
+.tickeCard-price{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.tempImg{
+  margin-top: 10px;
+  max-width: 200px;
+}
